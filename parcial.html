@@ -1,16 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title>Usuarios</title>
-  </head>
-  <body>
-    <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="edith.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Web</h1>
+    <h1 id="regular">Developer</h1>
+
+    <form action="Pag2.html" method ="GET" class="shadow p-3 mb-5">
+
+    <label>llene el siguiente formulario</label>
+
+        <div class="inputMod" id="name">
+        <input name="name"class="form-control " type="text" placeholder="Nombre" />
+        <i class="bi bi-person-fill"></i>
         </div>
-  </body>
+
+    <br>
+
+        <div class="inputMod" id="Email"> 
+        <input name= "email" class="form-control" type="text" placeholder="Email">
+        <i class="bi bi-envelope-fill"></i>
+        </div>
+    <br>
+
+        <div class="inputMod" id="Telefono">
+        <input name="telephone"class="form-control " type="text" placeholder="Telefono">
+        <i><img src="RESOURCES/telefono.PNG" width="11px" height="11px"></img></i>
+        </div>  
+    <br>
+
+        <div class="input-group mb-3">
+        <input type="text" class="form-control" id="gustos">
+        <button class="btn btn-outline-success" type="button" onclick="add_row();">Gustos</button>
+        </div>
+
+      <div class="container border rounded">
+          <br>
+        <div class="row">
+          <div class="col">
+            <badge class="bb"><img src="RESOURCES/flag-regular.png" width="30px" disabled></badge>
+            
+          </div>
+
+          <div class="col-9">
+            <table id="tabla" class="table table-bordered">
+            <thead>
+                    <tr>
+                    <th scope="col">Gustos</th>
+                    <th scope="col">%</th>
+                    <th scope="col">edit</th>
+                    <tr>
+            </thead>   
+            </table>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <p>Aceptar para guardar los cambios o Cancelar</a>.</p>
+        <button class="btn btn-outine-secondary"type= "submit" href="/">Aceptar</button>
+        <button class="btn btn-outline-danger" type="reset" >Cancelar</button>
+      </div>
+    </form>
+</body>
 </html>
